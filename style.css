@@ -1,11 +1,15 @@
+body {
+  background-image: url(./background.jpg);
+  background-color: #fbfff7; 
+ }
 header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    border-bottom-style: ridge;
-    border-color: #54a657;
-    padding: 10px;
+    /* border-bottom-style: ridge;
+    border-color: #489e16;
+    border-right: ridge #489e16;        line */
 }
 .logo {
     margin-right: 30px;
@@ -35,7 +39,7 @@ margin-right: 20px;
     padding: 8px 10px;
     text-transform: uppercase;
     letter-spacing: .27em;
-    background-color: #54a657; /* Green */
+    background-color: #489e16; /* Green */
     border: none;
     color: white;
     padding: 8px 10px;
@@ -44,12 +48,11 @@ margin-right: 20px;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    float: left;
     border-radius: 8px;
 }
 .menu a:hover{
     color: #ffffff;
-    background-color: #169416;
+    background-color: #74b81c;
     border-radius: 8px;
     text-decoration: none;
     padding: 8px 10px;
@@ -58,19 +61,20 @@ margin-right: 20px;
 * {box-sizing: border-box;
   position: relative;}
 
-form {
+.search form {
+  box-sizing: border-box;
   position: relative;
   width: 300px;
-  margin: 0 auto;
+  margin: 30px;
 }
 .search input {
   width: 100%;
   height: 38px;
   padding-left: 10px;
-  border: 2px solid #54a657;
+  border: 2px solid #489e16;
   border-radius: 5px;
   outline: none;
-  background: #e9f7e6;
+  background: #f1f5e0;
   color: #9E9C9C;
 }
 .search button {
@@ -80,7 +84,7 @@ form {
   width: 38px;
   height: 38px;
   border: none;
-  background-color: #54a657;
+  background-color: #489e16;
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
 }
@@ -90,3 +94,16 @@ form {
   font-size: 16px;
   color: #ffffff;
 } 
+/* .main-footer .footer-inner {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-top: 3px solid #333;
+  border-color: #489e16;
+} */
+.main-footer .connection ul {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 20px;
+  list-style: none;
+  float: center;
+}
